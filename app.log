@@ -1,0 +1,11 @@
+[2019-Dec-27 11:51] 127.0.0.1 GET http /? 200 OK
+[2019-Dec-27 11:52] 127.0.0.1 GET http /error? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\Edison Pama\AppData\Local\pypoetry\Cache\virtualenvs\flask-template-UHQr6Gwv-py3.8\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Edison Pama\AppData\Local\pypoetry\Cache\virtualenvs\flask-template-UHQr6Gwv-py3.8\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "test.py", line 37, in get_nothing
+    return foobar # intentional non-existent variable
+NameError: name 'foobar' is not defined
+
